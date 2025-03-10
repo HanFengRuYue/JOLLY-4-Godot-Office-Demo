@@ -1,0 +1,111 @@
+[gd_scene load_steps=5 format=3 uid="uid://bhh3axnbku4na"]
+
+[ext_resource type="Texture2D" uid="uid://ba0lpgs2852ox" path="res://贴图/声音测试/耳机图标.png" id="1_32wcp"]
+[ext_resource type="Script" uid="uid://cvg7m5138w57l" path="res://场景/声音测试.gd" id="1_ujk3d"]
+[ext_resource type="FontFile" uid="uid://bjbd4jiym7t67" path="res://字体/MiSans-Regular.ttf" id="3_4q3ov"]
+[ext_resource type="AudioStream" uid="uid://bgrvxic6aws4t" path="res://音频/声音测试/声音测试音效.ogg" id="4_4q3ov"]
+
+[node name="声音测试" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+script = ExtResource("1_ujk3d")
+
+[node name="耳机图标" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.271296
+anchor_right = 1.0
+anchor_bottom = 0.451296
+offset_left = 840.5
+offset_right = -840.5
+offset_bottom = -0.400009
+grow_horizontal = 2
+texture = ExtResource("1_32wcp")
+metadata/_edit_use_anchors_ = true
+
+[node name="提示文本" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.533333
+anchor_right = 1.0
+anchor_bottom = 0.787
+offset_left = 262.5
+offset_right = -262.509
+offset_bottom = 0.039917
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_4q3ov")
+theme_override_font_sizes/font_size = 45
+text = "建议使用耳机以获得最佳游戏体验。
+
+部分游戏机制高度依赖立体声设备，请确保声音分别来自左、右扬声器。"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="完成按钮" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.818519
+anchor_right = 1.0
+anchor_bottom = 0.91363
+offset_left = 814.0
+offset_right = -814.0
+offset_bottom = 0.279968
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_hover_color = Color(1, 0.807491, 0.449027, 1)
+theme_override_colors/font_color = Color(1, 0.729412, 0, 1)
+theme_override_colors/font_focus_color = Color(1, 0.729412, 0, 1)
+theme_override_fonts/font = ExtResource("3_4q3ov")
+theme_override_font_sizes/font_size = 70
+text = "完成
+"
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="L" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.282
+anchor_right = 1.0
+anchor_bottom = 0.329
+offset_left = 372.0
+offset_top = 0.440002
+offset_right = -1498.0
+offset_bottom = -0.320038
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_4q3ov")
+theme_override_font_sizes/font_size = 46
+text = "L"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="R" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.282
+anchor_right = 1.0
+anchor_bottom = 0.329
+offset_left = 1492.0
+offset_top = 0.440002
+offset_right = -378.0
+offset_bottom = -0.320038
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_4q3ov")
+theme_override_font_sizes/font_size = 46
+text = "R"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="测试音效" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_4q3ov")

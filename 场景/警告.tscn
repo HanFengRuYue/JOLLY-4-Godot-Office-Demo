@@ -1,0 +1,62 @@
+[gd_scene load_steps=3 format=3 uid="uid://ca1bnw6t5vxmj"]
+
+[ext_resource type="FontFile" uid="uid://bjbd4jiym7t67" path="res://字体/MiSans-Regular.ttf" id="1_mmcj2"]
+[ext_resource type="Script" uid="uid://2le6kqny8fr3" path="res://场景/警告.gd" id="1_n4mie"]
+
+[node name="警告" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_n4mie")
+
+[node name="警告标题" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.246296
+anchor_right = 1.0
+anchor_bottom = 0.34537
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_mmcj2")
+theme_override_font_sizes/font_size = 80
+text = "警    告"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="警告内容" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.34537
+anchor_right = 1.0
+anchor_bottom = 0.681
+offset_left = 392.0
+offset_right = -392.0
+offset_bottom = -0.480042
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_mmcj2")
+theme_override_font_sizes/font_size = 50
+text = "该游戏包含闪烁的灯光、巨大噪音、动画血腥场面以及可能不适合部分观众的内容。"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="按键提示" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.812963
+anchor_right = 1.0
+anchor_bottom = 0.862963
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("1_mmcj2")
+theme_override_font_sizes/font_size = 40
+text = "按下任意键继续"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
